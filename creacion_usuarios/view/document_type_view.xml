@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="gid_usuario_document_type_form_view" model="ir.ui.view">
+			<field name="name">gid.usuario.document.type.form</field>
+			<field name="model">gid.document_type</field>
+			<field name="arch" type="xml">
+				<form string="Tipo Documento Usuarios GID">
+					<field name="code"/>
+					<field name="name"/>
+				</form>
+			</field>
+		</record>
+
+		<record id="gid_usuario_document_type_tree_view" model="ir.ui.view">
+			<field name="name">gid.usuario.document.type.tree.view</field>
+			<field name="model">gid.document_type</field>
+			<field name="arch" type="xml">
+				<tree string="Tipo Documento Usuarios GID">
+					<field name="code"/>
+					<field name="name"/>
+				</tree>
+			</field>
+		</record>
+	
+
+		<record id="action_gid_usuario_document_type" model="ir.actions.act_window">
+			<field name="name">tipo_documento</field>
+			<field name="res_model">gid.document_type</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		
+		<menuitem action="action_gid_usuario_document_type" id="item_gid_usuario_document_type" name="Document Type Usuarios" parent="gid_menu_usuario" />
+	</data>
+</openerp>	

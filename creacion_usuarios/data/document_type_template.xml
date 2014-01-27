@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+
+	<data noupdate="1">
+		<record id="rec1" model="gid.document_type">
+			<field name='code'>TI</field>
+			<field name='name'>Tarjeta de Identidad</field>
+		</record>
+		<record id="rec2" model="gid.document_type">
+			<field name='code'>CC</field>
+			<field name='name'>Cédula de ciudadanía</field>
+		</record>	 	 
+		<record id="rec3" model="gid.document_type">
+			<field name='code'>NIT</field>
+			<field name='name'>Número de identificación tributaria</field>
+		</record>	 
+		
+	</data> 
+	<data>
+		<record id="rec1" model="gid.document_type">
+			<field name="code">TI</field>
+			<field name="name">Tarjeta identidad</field>
+		</record>
+		<record id="rec2" model="gid.document_type">
+			<field name="code">CC</field>
+			<field name="name">Cedula de ciudadania</field>
+		</record>
+		<record id="rec3" model="gid.document_type">
+			<field name="code">NIT</field>
+			<field name="name">Numero de identificacion tributaria</field>
+		</record>
+	</data>
+</openerp>

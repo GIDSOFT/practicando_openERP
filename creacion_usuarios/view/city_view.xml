@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="gid_usuario_city_form_view" model="ir.ui.view">
+			<field name="name">gid.usuario.city.form</field>
+			<field name="model">gid.city</field>
+			<field name="arch" type="xml">
+				<form string="Ciudad Usuarios GID">
+					<field name="code"/>
+					<field name="name"/>
+					<field name="state_id"/>
+				</form>
+			</field>
+		</record>
+
+		<record id="gid_usuario_city_tree_view" model="ir.ui.view">
+			<field name="name">gid.usuario.city.tree</field>
+			<field name="model">gid.city</field>
+			<field name="arch" type="xml">
+				<tree string="Ciudad Usuarios GID">
+					<field name="code"/>
+					<field name="name"/>
+					<field name="state_id"/>
+				</tree>
+			</field>
+		</record>
+	
+
+		<record id="action_gid_usuario_city" model="ir.actions.act_window">
+			<field name="name">Ciudades</field>
+			<field name="res_model">gid.city</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		
+		<menuitem action="action_gid_usuario_city" id="item_gid_usuario_city" name="Citys Usuarios" parent="gid_menu_usuario" />
+	</data>
+</openerp>	

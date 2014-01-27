@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="gid_usuario" model="ir.ui.view">
+			<field name='name'>usuario_search</field>
+			<field name='model'>gid.usuario</field>
+			<field name="arch" type="xml">
+				<search string="Buscar">
+					<field name="name"/>
+					<field name="primer_apellido"/>
+					<field name="ref"/>
+				</search>
+			</field>
+		</record>
+
+		<record id="gid_usuario_form_view" model="ir.ui.view">
+			<field name="name">gid.usuario.form.view</field>
+			<field name="model">gid.usuario</field>
+			<field name="arch" type="xml">
+				<form string="Usuarios GID">
+					<field name="name"/>
+					<field name="segundo_nombre"/>
+					<field name="primer_apellido"/>
+					<field name="segundo_apellido"/>
+					<field name="document_type_id"/>
+					<field name="celular"/>
+					<field name="ref"/>
+					<field name="city_id"/>
+					<field name="fecha_nacimiento" on_change="onchange_calcular_edad(fecha_nacimiento)"/>
+					<field name="edad"/>
+				</form>
+			</field>
+		</record>
+
+		<record id="gid_usuario_tree_view" model="ir.ui.view">
+			<field name="name">gid.usuario.tree.view</field>
+			<field name="model">gid.usuario</field>
+			<field name="arch" type="xml">
+				<tree string="Usuarios GID">
+					<field name="name"/>
+					<field name="primer_apellido"/>
+					<field name="document_type_id"/>
+					<field name="ref"/>
+					<field name="city_id"/>
+					<field name="edad"/>
+				</tree>
+			</field>
+		</record>
+	
+		<record id="action_gid_usuario" model="ir.actions.act_window">
+			<field name="name">Usuarios</field>
+			<field name="res_model">gid.usuario</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		
+		<menuitem action="action_gid_usuario" id="item_gid_usuario" name="Usuarios" parent="gid_menu_usuario" />
+
+	</data>
+</openerp>	

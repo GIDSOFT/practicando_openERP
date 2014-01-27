@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<!-- departamentos-->
+		<record id="state_id_01" model="res.country.state">
+			<field name="code">76</field>
+			<field name="country_id">50</field>
+			<field name="name">Valle del Cauca</field>
+		</record>
+
+		<record id="state_id_02" model="res.country.state">
+			<field name="code">63</field>
+			<field name="country_id">50</field>
+			<field name="name">Quindio</field>
+		</record>
+
+		<!-- ciudades quindio-->
+		<record id="city_id_01" model="gid.city">
+			<field name="code">001</field>
+			<field name="name">Armenia</field>
+			<field eval="state_id_02" name="state_id"/>
+		</record>
+
+		<record id="city_id_02" model="gid.city">
+			<field name="code">111</field>
+			<field name="name">Buenavista</field>
+			<field eval="state_id_02" name= "state_id"/>
+		</record>
+
+		<record id="city_id_03" model="gid.city">
+			<field name="code">130</field>
+			<field name="name">Calarca</field>
+			<field eval="state_id_02" name= "state_id"/>
+		</record>
+
+		<record id="state_id_04" model="gid.city">
+			<field name="code">190</field>
+			<field name="name">Circasia</field>
+			<field eval="state_id_02" name= "state_id"/>
+		</record>
+
+		<record id="state_id_05" model="gid.city">
+			<field name="code">212</field>
+			<field name="name">Cordoba</field>
+			<field eval="state_id_02" name= "state_id"/>
+		</record>
+
+		<record id="state_id_06" model="gid.city">
+			<field name="code">272</field>
+			<field name="name">Finlandia</field>
+			<field eval="state_id_02" name= "state_id"/>
+		</record>
+
+		<record id="state_id_07" model="gid.city">
+			<field name="code">302</field>
+			<field name="name">Genova</field>
+			<field eval="state_id_02" name= "state_id"/>
+		</record>
+
+		<record id="city_id_08" model="gid.city">
+			<field name="code">401</field>
+			<field name="name">La Tebaida</field>
+			<field eval="state_id_02" name= "state_id"/>
+		</record>
+
+		<record id="city_id_09" model="gid.city">
+			<field name="code">470</field>
+			<field name="name">Montenegro</field>
+			<field eval="state_id_02" name= "state_id"/>
+		</record>
+
+		<record id="city_id_10" model="gid.city">
+			<field name="code">548</field>
+			<field name="name">Pijao</field>
+			<field eval="state_id_02" name= "state_id"/>
+		</record>
+
+		<record id="city_id_11" model="gid.city">
+			<field name="code">594</field>
+			<field name="name">Quimbaya</field>
+			<field eval="state_id_02" name="state_id"/>
+		</record>
+
+		<record id="city_id_12" model="gid.city">
+			<field name="code">690</field>
+			<field name="name">Salento</field>
+			<field eval="state_id_02" name="state_id"/>
+		</record>
+
+
+		<!-- ciudades valle del cauca-->
+
+		<record id="city_id_13" model="gid.city">
+			<field name="code">001</field>
+			<field name="name">Cali</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_14" model="gid.city">
+			<field name="code">020</field>
+			<field name="name">Alcala</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_15" model="gid.city">
+			<field name="code">036</field>
+			<field name="name">Andalucia</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_16" model="gid.city">
+			<field name="code">041</field>
+			<field name="name">Anserma Nuevo</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_17" model="gid.city">
+			<field name="code">054</field>
+			<field name="name">Argelia</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_18" model="gid.city">
+			<field name="code">100</field>
+			<field name="name">Bolivar</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_19" model="gid.city">
+			<field name="code">109</field>
+			<field name="name">Buenaventura</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+
+		<record id="city_id_20" model="gid.city">
+			<field name="code">111</field>
+			<field name="name">Guadalajara de Buga</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_21" model="gid.city">
+			<field name="code">113</field>
+			<field name="name">Bugalagrande</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_22" model="gid.city">
+			<field name="code">122</field>
+			<field name="name">Caicedonia</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_23" model="gid.city">
+			<field name="code">126</field>
+			<field name="name">Calima</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_24" model="gid.city">
+			<field name="code">130</field>
+			<field name="name">Candelaria</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_25" model="gid.city">
+			<field name="code">233</field>
+			<field name="name">Cartago</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_26" model="gid.city">
+			<field name="code">233</field>
+			<field name="name">Dagua</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_27" model="gid.city">
+			<field name="code">246</field>
+			<field name="name">El aguila</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_28" model="gid.city">
+			<field name="code">246</field>
+			<field name="name">El cairo</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_29" model="gid.city">
+			<field name="code">248</field>
+			<field name="name">El cerrito</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_30" model="gid.city">
+			<field name="code">250</field>
+			<field name="name">El dovio</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_31" model="gid.city">
+			<field name="code">275</field>
+			<field name="name">Florida</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_32" model="gid.city">
+			<field name="code">306</field>
+			<field name="name">Ginebra</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_33" model="gid.city">
+			<field name="code">318</field>
+			<field name="name">Guacari</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_34" model="gid.city">
+			<field name="code">364</field>
+			<field name="name">Jamundi</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_35" model="gid.city">
+			<field name="code">377</field>
+			<field name="name">La cumbre</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_36" model="gid.city">
+			<field name="code">400</field>
+			<field name="name">La Union</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_37" model="gid.city">
+			<field name="code">403</field>
+			<field name="name">La victoria</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_38" model="gid.city">
+			<field name="code">497</field>
+			<field name="name">Obando</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_39" model="gid.city">
+			<field name="code">520</field>
+			<field name="name">Palmira</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_40" model="gid.city">
+			<field name="code">563</field>
+			<field name="name">Pradera</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_41" model="gid.city">
+			<field name="code">606</field>
+			<field name="name">Restrepo</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_42" model="gid.city">
+			<field name="code">616</field>
+			<field name="name">Riofrio</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_43" model="gid.city">
+			<field name="code">622</field>
+			<field name="name">Roldanillo</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_44" model="gid.city">
+			<field name="code">670</field>
+			<field name="name">San pedro</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_45" model="gid.city">
+			<field name="code">736</field>
+			<field name="name">Sevilla</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_46" model="gid.city">
+			<field name="code">823</field>
+			<field name="name">Toro</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_47" model="gid.city">
+			<field name="code">828</field>
+			<field name="name">Trujillo</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_48" model="gid.city">
+			<field name="code">834</field>
+			<field name="name">Tulua</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_49" model="gid.city">
+			<field name="code">845</field>
+			<field name="name">Ulloa</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_50" model="gid.city">
+			<field name="code">863</field>
+			<field name="name">Versalles</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_51" model="gid.city">
+			<field name="code">869</field>
+			<field name="name">Vijes</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_52" model="gid.city">
+			<field name="code">890</field>
+			<field name="name">Yotoco</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_53" model="gid.city">
+			<field name="code">892</field>
+			<field name="name">Yumbo</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+
+		<record id="city_id_54" model="gid.city">
+			<field name="code">892</field>
+			<field name="name">Zarzal</field>
+			<field eval="state_id_01" name="state_id"/>
+		</record>
+	</data>		
+</openerp>

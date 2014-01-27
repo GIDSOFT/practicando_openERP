@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<menuitem name="GID" id="gid_menu" />
+		<menuitem name="Integrantes" id="gid_menu_usuario" parent="gid_menu" />
+	</data>
+</openerp>
